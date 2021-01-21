@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Sistema de grid</title>
+    <style>
+        body {
+            background-color: rgb(180, 180, 180);
+        }
+
+        section {
+            margin-top: 50px;
+        }
+
+        p {
+            margin-top: 30px;
+        }
+
+        .col-teste {
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        .col-nest-teste {
+            height: 50px;
+            border: 1px solid black;
+        }
+
+        .col-nest-teste p {
+            margin-top: 10px;
+        }
+
+        .row {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin-bottom: 100px;
+        }
+
+        h2 {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class='display-1 text-center'>Aula grid</h1>
+
+    <!-- Layout ajustado automaticamente -->
+    <section class='container bg-light'>
+        <h2 class='display-5 text-center'>Automatico</h2>
+
+        <div class='container-fluid'>
+            <div class='row'>
+                <div class='col-lg col-teste'>
+                    <div class='row'>
+                        <div class='col col-nest-teste'>
+                            coluna 1
+                        </div>
+                        <div class='col col-nest-teste'>
+                            coluna 2
+                        </div>
+                        <div class='col col-nest-teste'>
+                            coluna 3
+                        </div>
+                    </div>
+                </div>
+                <div class='col-lg col-teste'>
+                    <p>coluna 2</p>
+                </div>
+                <div class='col-lg col-teste'>
+                    <p>coluna 3</p>
+                </div>
+                <div class='col-lg col-teste'>
+                    <p>coluna 4</p>
+                </div>
+                <div class='col-lg col-teste'>
+                    <p>coluna 5</p>
+                </div>
+                <div class='col-lg col-teste'>
+                    <p>coluna 6</p>
+                </div>
+                <div class='col-lg col-teste'>
+                    <p>coluna 7</p>
+                </div>
+                <div class='col-lg col-teste'>
+                    <p>coluna 8</p>
+                </div>
+                <div class='col-lg col-teste'>
+                    <p>coluna 9</p>
+                </div>
+                <div class='col-lg col-teste'>
+                    <p>coluna 10</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layout ajustado "manualmente" -->
+    <section class='container bg-light'>
+        <h2 class='display-5 text-center'>Manual</h2>
+
+        <div class='container-fluid'>
+            <div class='row'>
+                <div class='col-md-4 col-lg-3 col-teste'>
+                    <p>coluna 1</p>
+                </div>
+                <div class='col-md-4 col-lg-3 col-teste'>
+                    <p>coluna 2</p>
+                </div>
+                <div class='col-md-4 col-lg-3 col-teste'>
+                    <p>coluna 3</p>
+                </div>
+                <div class='col-md-4 col-lg-3 col-teste'>
+                    <p>coluna 4</p>
+                </div>
+                <div class='col-md-4 col-lg-3 col-teste'>
+                    <p>coluna 5</p>
+                </div>
+                <div class='col-md-4 col-lg-3 col-teste'>
+                    <p>coluna 6</p>
+                </div>
+                <div class='col-md-4 col-lg-3 col-teste'>
+                    <p>coluna 7</p>
+                </div>
+                <div class='col-md-4 col-lg-3 col-teste'>
+                    <p>coluna 8</p>
+                </div>
+                <div class='col-md-4 col-lg-3 col-teste'>
+                    <p>coluna 9</p>
+                </div>
+                <div class='col-md-4 col-lg-3 col-teste'>
+                    <p>coluna 10</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layout utilizando o row-cols -->
+    <section class='container bg-light'>
+        <h2 class='display-5 text-center'>Row-cols</h2>
+
+        <div class='container-fluid'>
+            <div class='row row-cols-md-3 row-cols-lg-4 row-cols-xl-auto'>
+                <div class='col-teste'>
+                    <p>1</p>
+                </div>
+                <div class='col-teste'>
+                    <p>2</p>
+                </div>
+                <div class='col-teste'>
+                    <p>3</p>
+                </div>
+                <div class='col-teste'>
+                    <p>4</p>
+                </div>
+                <div class='col-teste'>
+                    <p>5</p>
+                </div>
+                <div class='col-teste'>
+                    <p>6</p>
+                </div>
+                <div class='col-teste'>
+                    <p>7</p>
+                </div>
+                <div class='col-teste'>
+                    <p>8</p>
+                </div>
+                <div class='col-teste'>
+                    <p>9</p>
+                </div>
+                <div class='col-teste'>
+                    <p>10</p>
+                </div>
+                <div class='col-teste'>
+                    <p>11</p>
+                </div>
+                <div class='col-teste'>
+                    <p>12</p>
+                </div>
+                <div class='col-teste'>
+                    <p>13</p>
+                </div>
+                <div class='col-teste'>
+                    <p>14</p>
+                </div>
+                <div class='col-teste'>
+                    <p>15</p>
+                </div>
+                <div class='col-teste'>
+                    <p>16</p>
+                </div>
+                <div class='col-teste'>
+                    <p>17</p>
+                </div>
+                <div class='col-teste'>
+                    <p>18</p>
+                </div>
+                <div class='col-teste'>
+                    <p>19</p>
+                </div>
+                <div class='col-teste'>
+                    <p>20</p>
+                </div>
+                <div class='col-teste'>
+                    <p>21</p>
+                </div>
+                <div class='col-teste'>
+                    <p>22</p>
+                </div>
+                <div class='col-teste'>
+                    <p>23</p>
+                </div>
+                <div class='col-teste'>
+                    <p>24</p>
+                </div>
+                <div class='col-teste'>
+                    <p>25</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
