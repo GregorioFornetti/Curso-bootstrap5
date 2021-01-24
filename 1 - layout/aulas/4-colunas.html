@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: rgb(180, 180, 180);
+        }
+
+        section {
+            margin-top: 50px;
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-top: 30px;
+        }
+
+        .col-teste {
+            height: 100px;
+            border: 5px solid rgb(238, 219, 44);
+        }
+
+        .col-teste-maior {
+            height: 200px;
+            border: 5px solid rgb(238, 219, 44);
+        }
+
+        .col-teste-maior p {
+            margin-top: 80px;
+        }
+
+        .col-nest-teste p {
+            margin-top: 10px;
+        }
+
+        .row {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            color: white;
+        }
+        
+        h1 {
+            margin-bottom: 100px;
+        }
+
+        h2 {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        h3 {
+            margin-top: 50px;
+        }
+
+        .row-teste-altura {
+            background-color: rgb(15, 15, 15);
+            height: 500px;
+            margin-top: 20px;
+        }
+
+        .row-teste {
+            background-color: rgb(15, 15, 15);
+            margin-top: 20px;
+        }
+
+        .row-teste-quebra {
+            background-color: rgb(15, 15, 15);
+        }
+    </style>
+    <title>Aula colunas</title>
+</head>
+<body>
+    <h1 class='display-1 text-center'>Aula colunas</h1>
+
+    <section class='container bg-light'>
+        <h2 class='display-5 text-center'>Alinhando verticalmente elementos</h2>
+
+        <h3 class='display-6 text-center'>align-items-start</h3>
+        <div class='container-fluid'>
+            <div class='row row-teste-altura align-items-start'>
+                <div class='col-4 col-teste'>
+                    <p>box 1</p>
+                </div>
+                <div class='col-4 col-teste'>
+                    <p>box 2</p>
+                </div>
+                <div class='col-4 col-teste'>
+                    <p>box 3</p>
+                </div>
+            </div>
+        </div>
+        <div class='container-fluid'>
+            <div class='row row-teste align-items-start'>
+                <div class='col-4 col-teste'>
+                    <p>box 1</p>
+                </div>
+                <div class='col-4 col-teste-maior'>
+                    <p>box 2</p>
+                </div>
+                <div class='col-4 col-teste'>
+                    <p>box 3</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class='display-6 text-center'>align-items-center</h3>
+        <div class='container-fluid'>
+            <div class='row row-teste-altura align-items-center'>
+                <div class='col-4 col-teste'>
+                    <p>box 1</p>
+                </div>
+                <div class='col-4 col-teste'>
+                    <p>box 2</p>
+                </div>
+                <div class='col-4 col-teste'>
+                    <p>box 3</p>
+                </div>
+            </div>
+        </div>
+        <div class='container-fluid'>
+            <div class='row row-teste align-items-center'>
+                <div class='col-4 col-teste'>
+                    <p>box 1</p>
+                </div>
+                <div class='col-4 col-teste-maior'>
+                    <p>box 2</p>
+                </div>
+                <div class='col-4 col-teste'>
+                    <p>box 3</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class='display-6 text-center'>align-items-end</h3>
+        <div class='container-fluid'>
+            <div class='row row-teste-altura align-items-end'>
+                <div class='col-4 col-teste'>
+                    <p>box 1</p>
+                </div>
+                <div class='col-4 col-teste'>
+                    <p>box 2</p>
+                </div>
+                <div class='col-4 col-teste'>
+                    <p>box 3</p>
+                </div>  
+            </div>
+        </div>
+        <div class='container-fluid'>
+            <div class='row row-teste align-items-end'>
+                <div class='col-4 col-teste'>
+                    <p>box 1</p>
+                </div>
+                <div class='col-4 col-teste-maior'>
+                    <p>box 2</p>
+                </div>
+                <div class='col-4 col-teste'>
+                    <p>box 3</p>
+                </div>  
+            </div>
+        </div> 
+
+        <h3 class='display-6 text-center'>align-self</h3>
+        <div class='container-fluid'>
+            <div class='row row-teste-altura'>
+                <div class='col-4 col-teste align-self-start'>
+                    <p>box 1 (start)</p>
+                </div>
+                <div class='col-4 col-teste align-self-center'>
+                    <p>box 2 (center)</p>
+                </div>
+                <div class='col-4 col-teste align-self-end'>
+                    <p>box 3 (end)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class='container bg-light'>
+        <h2 class='display-5 text-center'>Alinhando horizontalmente elementos</h2>
+        
+        <div class="container-fluid">
+            <div class="row row-teste justify-content-start">
+                <div class="col-4 col-teste">
+                    <p>box 1</p>
+                </div>
+                <div class="col-4 col-teste">
+                    <p>box 2</p>
+                </div>
+            </div>
+            <div class="row row-teste justify-content-center">
+                <div class="col-4 col-teste">
+                    <p>box 1</p>
+                </div>
+                <div class="col-4 col-teste">
+                    <p>box 2</p>
+                </div>
+            </div>
+            <div class="row row-teste justify-content-end">
+                <div class="col-4 col-teste">
+                    <p>box 1</p>
+                </div>
+                <div class="col-4 col-teste">
+                    <p>box 2</p>
+                </div>
+            </div>
+            <div class="row row-teste justify-content-around">
+                <div class="col-4 col-teste">
+                    <p>box 1</p>
+                </div>
+                <div class="col-4 col-teste">
+                    <p>box 2</p>
+                </div>
+            </div>
+            <div class="row row-teste justify-content-between">
+                <div class="col-4 col-teste">
+                    <p>box 1</p>
+                </div>
+                <div class="col-4 col-teste">
+                    <p>box 2</p>
+                </div>
+            </div>
+            <div class="row row-teste justify-content-evenly">
+                <div class="col-4 col-teste">
+                    <p>box 1</p>
+                </div>
+                <div class="col-4 col-teste" col-teste>
+                    <p>box 2</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class='container bg-light'>
+        <h2 class='display-5 text-center'>Quebrando linhas de outra forma</h2>
+
+        <div class='container-fluid'>
+            <div class='row row-teste-quebra'>
+                <div class='col-4 col-teste'>
+                    <p>box 1</p>
+                </div>
+                <div class='col-4 col-teste'>
+                    <p>box 2</p>
+                </div>
+            </div>
+            <div class='row row-teste-quebra'>
+                <div class='col-4 col-teste'>
+                    <p>box 1</p>
+                </div>
+                <div class='col-4 col-teste'>
+                    <p>box 2</p>
+                </div>
+            </div>
+            <div class='row row-teste'>
+                <div class='col-4 col-teste'>
+                    <p>box 1</p>
+                </div>
+                <div class='col-4 col-teste'>
+                    <p>box 2</p>
+                </div>
+
+                <div class="w-100"></div>
+                
+                <div class='col-4 col-teste'>
+                    <p>box 1</p>
+                </div>
+                <div class='col-4 col-teste'>
+                    <p>box 2</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class='container bg-light'>
+        <h2 class='display-5 text-center'>Mudando a ordem dos elementos</h2>
+
+        <div class='container-fluid'>
+            <div class='row row-teste justify-content-evenly'>
+                <div class='col-3 col-teste order-md-2 order-lg-3 order-xl-1'>
+                    <p>box 1</p>
+                </div>
+                <div class='col-3 col-teste order-md-3 order-lg-1 order-xl-2'>
+                    <p>box 2</p>
+                </div>
+                <div class='col-3 col-teste order-md-1 order-lg-2 order-xl-3'>
+                    <p>box 3</p>
+                </div>
+                
+                <div class='col-3 col-teste'>
+                    <p>box 4</p>
+                </div> 
+                
+                
+                <div class='col-3 order-first col-teste'>
+                    <p>box 5</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class='container bg-light'>
+        <h2 class='display-5 text-center'>Espaçamento (offset) das colunas</h2>
+
+        <div class='container-fluid'>
+            <div class='row row-teste'>
+                <div class='col-3 offset-md-3 col-teste'>
+                    <p>box 1</p>
+                </div>
+                <div class='col-3 offset-md-3 col-teste'>
+                    <p>box 2</p>
+                </div>
+                <div class='col-3 offset-md-4 offset-xl-0 col-teste'>
+                    <p>box 3</p>
+                </div>
+                <div class='col-3 offset-md-4 offset-lg-1 col-teste'>
+                    <p>box 4</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
