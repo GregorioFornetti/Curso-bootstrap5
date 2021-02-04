@@ -20,7 +20,7 @@
 
         .big-row {
             height: 100vh;
-            background-color: rgb(220, 220, 220)
+            background-color: rgb(220, 220, 220);
         }
 
         .small-box {
@@ -82,15 +82,16 @@
     </section>
 
     <section class='container-fluid'>
-        <div class='row big-row align-items-center justify-content-center'>
-            <div class='col-lg-10 col-xl-8 big-box' style='height: auto;'>
+        <div class='row big-row align-items-center'>
+            <div>
                 <div class='row justify-content-center gy-1'>
-                    <div class='small-box col-md-10 col-xl-8'>
+                    <div class='small-box col-md-10 col-xl-8 col-xxl-6'>
                         <div class='box-content'>
                             <span>Caixa de texto 1</span>
                         </div>
                     </div>
-                    <div class='small-box col-md-8 col-xl-6'>
+                    <div class='w-100'></div>
+                    <div class='small-box col-10 col-md-8 col-xl-6 col-xxl-4'>
                         <div class='box-content'>
                             <span>Caixa de texto 2</span>
                         </div>
@@ -102,7 +103,7 @@
 
     <h2 class='display-5 text-center'>Imagens</h2>
     <section class='container'>
-        <div class='row justify-content-center gy-3'>
+        <div class='row justify-content-evenly gy-3 gx-0' style='background-color: rgb(220, 220, 220);'>
             <div class='col-auto'>
                 <img src='teste.jpg' alt='imagem teste'>
             </div>
