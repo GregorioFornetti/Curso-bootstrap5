@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        div {
+            background-color: rgb(240, 240, 240);
+            padding: 10px;
+            margin-bottom: 50px;
+        }
+    </style>
+    <title>Aula tipografias, reboot e listas</title>
+</head>
+<body>
+    <h1 class='display-1 text-center' style='margin-bottom: 50px;'>Aula tipografias, reboot e listas</h1>
+
+    <div class='container'>
+        <!-- Titulos utilizando as tags convencionais -->
+        <h1>Titulo h1</h1>
+        <h2>Titulo h2</h2>
+        <h3>Titulo h3</h3>
+        <h4>Titulo h4</h4>
+        <h5>Titulo h5</h5>
+        <h6>Titulo h6</h6>
+    </div>
+
+    <div class='container'>
+        <!-- Titulos utilizando classes ao invés das tags -->
+        <p class='h1'>Titulo h1 usando uma classe</p>
+        <p class='h2'>Titulo h2 usando uma classe</p>
+        <p class='h3'>Titulo h3 usando uma classe</p>
+        <p class='h4'>Titulo h4 usando uma classe</p>
+        <p class='h5'>Titulo h5 usando uma classe</p>
+        <p class='h6'>Titulo h6 usando uma classe</p>
+    </div>
+
+    <div class='container'>
+        <!-- Forma errada de criar titulos -->
+        <h2>Titulo principal</h2>
+        <h3>Tópico 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, eos vitae voluptate tempora dicta dolorum harum neque in repellat aliquam ab? Libero quisquam, laboriosam quaerat architecto explicabo dolores ad provident.</p>
+        <h3>Tópico 2</h3>
+        <h5>Sub tópico 1</h5>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, eos vitae voluptate tempora dicta dolorum harum neque in repellat aliquam ab? Libero quisquam, laboriosam quaerat architecto explicabo dolores ad provident.</p>
+        <h5>Sub tópico 2</h5>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, eos vitae voluptate tempora dicta dolorum harum neque in repellat aliquam ab? Libero quisquam, laboriosam quaerat architecto explicabo dolores ad provident.</p>
+    </div>
+
+    <div class='container'>
+        <!-- Forma correta de criar titulos -->
+        <h1 class='h2'>Titulo principal</h1>
+        <h2 class='h3'>Tópico 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, eos vitae voluptate tempora dicta dolorum harum neque in repellat aliquam ab? Libero quisquam, laboriosam quaerat architecto explicabo dolores ad provident.</p>
+        <h2 class='h3'>Tópico 2</h2>
+        <h3 class='h5'>Sub tópico 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, eos vitae voluptate tempora dicta dolorum harum neque in repellat aliquam ab? Libero quisquam, laboriosam quaerat architecto explicabo dolores ad provident.</p>
+        <h3 class='h5'>Sub tópico 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, eos vitae voluptate tempora dicta dolorum harum neque in repellat aliquam ab? Libero quisquam, laboriosam quaerat architecto explicabo dolores ad provident.</p>
+    </div>
+
+    <div class='container'>
+        <h1 class="display-1">Titulo maior 1 (display 1)</h1>
+        <h1 class="display-2">Titulo maior 2 (display 2)</h1>
+        <h1 class="display-3">Titulo maior 3 (display 3)</h1>
+        <h1 class="display-4">Titulo maior 4 (display 4)</h1>
+        <h1 class="display-5">Titulo maior 5 (display 5)</h1>
+        <h1 class="display-6">Titulo maior 6 (display 6)</h1>
+    </div>
+
+    <div class='container'>
+        <!-- Titulo com texto secundário -->
+        <h1>Titulo <small class="text-muted">com texto secundário</small></h1>
+    </div>
+
+    <div class='container'>
+        <!-- Paragrafo com destaque -->
+        <p>
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+        </p>
+        <p class="lead">
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+        </p>
+    </div>
+
+    <div class='container'>
+        <!-- Criando citações -->
+        <blockquote class="blockquote">
+            <p>Só sei que nada sei.</p>
+        </blockquote>
+
+        <figure>
+            <blockquote class="blockquote">
+                <p>Só sei que nada sei.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                Sócrates
+            </figcaption>
+        </figure>
+    </div>
+
+    <div class='container'>
+        <!-- Lista sem estilos -->
+        <h1 class='h5'>Redes sociais</h1>
+        <ul class='list-unstyled'>
+            <li>facebook</li>
+            <li>twitter</li>
+            <li>instagram</li>
+            <li>github</li>
+        </ul>
+    </div>
+
+    <div class='container'>
+        <!-- Lista em linha -->
+        <ul class='list-inline'>
+            <li class="list-inline-item">Item1</li>
+            <li class="list-inline-item">Item2</li>
+            <li class="list-inline-item">Item3</li>
+        </ul>
+    </div>
+
+    <div class='container'>
+        <!-- Lista de definições -->
+        <dl class='row'>
+            <dt class='col-md-2'>Python</dt>
+            <dl class='col-md-10'>Python é uma linguagem de programação de alto nível, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.</dl>
+
+            <dt class='col-md-2'>Bootstrap</dt>
+            <dl class='col-md-10'>Bootstrap é um framework web com código-fonte aberto para desenvolvimento de componentes de interface e front-end para sites e aplicações web usando HTML, CSS e JavaScript, baseado em modelos de design para a tipografia</dl>
+        </dl>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

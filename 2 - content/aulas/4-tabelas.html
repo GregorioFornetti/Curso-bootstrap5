@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .table {
+            margin-bottom: 100px;
+        }
+    </style>
+    <title>Aula tabelas</title>
+</head>
+<body>
+    <h1 class='display-1 text-center' style='margin-bottom: 50px;'>Aula tabelas</h1>
+
+    <h2 class='text-center'>Tabela comum</h2>
+    <table class='table'>
+        <thead>
+            <th>ID</th>
+            <td>Nome</td>
+            <td>Sobrenome</td>
+            <td>Email</td>
+            <td>telefone</td>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Fulano</td>
+                <td>Freitas Ribeiro</td>
+                <td>fulanofreitas@hotmail.com</td>
+                <td>7070-7070</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Ciclano</td>
+                <td>Silva</td>
+                <td>ciclanosilva@hotmail.com</td>
+                <td>9990-9909</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Fulano</td>
+                <td>Santos</td>
+                <td>fulanosantos.com</td>
+                <td>5555-5555</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>Gregório</td>
+                <td>Fornetti Azevedo</td>
+                <td>gregoriofornettia@hotmail.com</td>
+                <td>1251-2571</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Colocando cores nas tabelas -->
+    <!-- primary secondary success danger warning info light dark -->
+    <h2 class='text-center'>Tabela colorida</h2>
+    <table class='table table-success'>
+        <thead>
+            <th>ID</th>
+            <td>Nome</td>
+            <td>Sobrenome</td>
+            <td>Email</td>
+            <td>telefone</td>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Fulano</td>
+                <td>Freitas Ribeiro</td>
+                <td>fulanofreitas@hotmail.com</td>
+                <td>7070-7070</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Ciclano</td>
+                <td>Silva</td>
+                <td>ciclanosilva@hotmail.com</td>
+                <td>9990-9909</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Fulano</td>
+                <td>Santos</td>
+                <td>fulanosantos.com</td>
+                <td>5555-5555</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>Gregório</td>
+                <td>Fornetti Azevedo</td>
+                <td>gregoriofornettia@hotmail.com</td>
+                <td>1251-2571</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Tabela listrada -->
+    <h2 class='text-center'>Tabela listrada</h2>
+    <table class='table table-primary table-striped'>
+        <thead>
+            <th>ID</th>
+            <td>Nome</td>
+            <td>Sobrenome</td>
+            <td>Email</td>
+            <td>telefone</td>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Fulano</td>
+                <td>Freitas Ribeiro</td>
+                <td>fulanofreitas@hotmail.com</td>
+                <td>7070-7070</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Ciclano</td>
+                <td>Silva</td>
+                <td>ciclanosilva@hotmail.com</td>
+                <td>9990-9909</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Fulano</td>
+                <td>Santos</td>
+                <td>fulanosantos.com</td>
+                <td>5555-5555</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>Gregório</td>
+                <td>Fornetti Azevedo</td>
+                <td>gregoriofornettia@hotmail.com</td>
+                <td>1251-2571</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Tabela com efeitos ao passar mouse por cima (hover) -->
+    <h2 class='text-center'>Tabela com efeito de "hover"</h2>
+    <table class='table table-hover'>
+        <thead>
+            <th>ID</th>
+            <td>Nome</td>
+            <td>Sobrenome</td>
+            <td>Email</td>
+            <td>telefone</td>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Fulano</td>
+                <td>Freitas Ribeiro</td>
+                <td>fulanofreitas@hotmail.com</td>
+                <td>7070-7070</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Ciclano</td>
+                <td>Silva</td>
+                <td>ciclanosilva@hotmail.com</td>
+                <td>9990-9909</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Fulano</td>
+                <td>Santos</td>
+                <td>fulanosantos.com</td>
+                <td>5555-5555</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>Gregório</td>
+                <td>Fornetti Azevedo</td>
+                <td>gregoriofornettia@hotmail.com</td>
+                <td>1251-2571</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Tabela com bordas -->
+    <h2 class='text-center'>Tabela com bordas</h2>
+    <table class='table table-bordered'>
+        <thead>
+            <th>ID</th>
+            <td>Nome</td>
+            <td>Sobrenome</td>
+            <td>Email</td>
+            <td>telefone</td>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Fulano</td>
+                <td>Freitas Ribeiro</td>
+                <td>fulanofreitas@hotmail.com</td>
+                <td>7070-7070</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Ciclano</td>
+                <td>Silva</td>
+                <td>ciclanosilva@hotmail.com</td>
+                <td>9990-9909</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Fulano</td>
+                <td>Santos</td>
+                <td>fulanosantos.com</td>
+                <td>5555-5555</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>Gregório</td>
+                <td>Fornetti Azevedo</td>
+                <td>gregoriofornettia@hotmail.com</td>
+                <td>1251-2571</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Tabela sem nenhuma borda -->
+    <h2 class='text-center'>Tabela sem nenhuma borda</h2>
+    <table class='table table-borderless'>
+        <thead>
+            <th>ID</th>
+            <td>Nome</td>
+            <td>Sobrenome</td>
+            <td>Email</td>
+            <td>telefone</td>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Fulano</td>
+                <td>Freitas Ribeiro</td>
+                <td>fulanofreitas@hotmail.com</td>
+                <td>7070-7070</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Ciclano</td>
+                <td>Silva</td>
+                <td>ciclanosilva@hotmail.com</td>
+                <td>9990-9909</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Fulano</td>
+                <td>Santos</td>
+                <td>fulanosantos.com</td>
+                <td>5555-5555</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>Gregório</td>
+                <td>Fornetti Azevedo</td>
+                <td>gregoriofornettia@hotmail.com</td>
+                <td>1251-2571</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Tabela menor -->
+    <h2 class='text-center'>Tabela menor</h2>
+    <table class='table table-sm'>
+        <thead>
+            <th>ID</th>
+            <td>Nome</td>
+            <td>Sobrenome</td>
+            <td>Email</td>
+            <td>telefone</td>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Fulano</td>
+                <td>Freitas Ribeiro</td>
+                <td>fulanofreitas@hotmail.com</td>
+                <td>7070-7070</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Ciclano</td>
+                <td>Silva</td>
+                <td>ciclanosilva@hotmail.com</td>
+                <td>9990-9909</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Fulano</td>
+                <td>Santos</td>
+                <td>fulanosantos.com</td>
+                <td>5555-5555</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>Gregório</td>
+                <td>Fornetti Azevedo</td>
+                <td>gregoriofornettia@hotmail.com</td>
+                <td>1251-2571</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Tabela responsiva -->
+    <h2 class='text-center'>Tabela responsiva</h2>
+    <div class='table-responsive' style='margin-bottom: 100px;'>
+        <table class='table' style='margin-bottom: 0px;'>
+            <thead>
+                <th>ID</th>
+                <td>Nome</td>
+                <td>Sobrenome</td>
+                <td>Email</td>
+                <td>telefone</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>Fulano</td>
+                    <td>Freitas Ribeiro</td>
+                    <td>fulanofreitas@hotmail.com</td>
+                    <td>7070-7070</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>Ciclano</td>
+                    <td>Silva</td>
+                    <td>ciclanosilva@hotmail.com</td>
+                    <td>9990-9909</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>Fulano</td>
+                    <td>Santos</td>
+                    <td>fulanosantos.com</td>
+                    <td>5555-5555</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>Gregório</td>
+                    <td>Fornetti Azevedo</td>
+                    <td>gregoriofornettia@hotmail.com</td>
+                    <td>1251-2571</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Utilizando classes nos elementos da tabela -->
+    <h2 class='text-center'>Estilizando elementos da tabela</h2>
+    <table class='table table-sm'>
+        <thead class='table-active'>
+            <th>ID</th>
+            <td>Nome</td>
+            <td>Sobrenome</td>
+            <td>Email</td>
+            <td>telefone</td>
+        </thead>
+        <tbody>
+            <tr class='table-primary'>
+                <th>1</th>
+                <td class='table-active'>Fulano</td>
+                <td>Freitas Ribeiro</td>
+                <td>fulanofreitas@hotmail.com</td>
+                <td>7070-7070</td>
+            </tr>
+            <tr>
+                <th class='table-success'>2</th>
+                <td>Ciclano</td>
+                <td>Silva</td>
+                <td>ciclanosilva@hotmail.com</td>
+                <td>9990-9909</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Fulano</td>
+                <td>Santos</td>
+                <td>fulanosantos.com</td>
+                <td>5555-5555</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>Gregório</td>
+                <td>Fornetti Azevedo</td>
+                <td>gregoriofornettia@hotmail.com</td>
+                <td>1251-2571</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Tabela completa -->
+    <h2 class='text-center'>Tabela completa</h2>
+    <table class='table table-sm'>
+        <caption>Lista de usuários</caption>
+        <thead class='table-active'>
+            <th>ID</th>
+            <td>Nome</td>
+            <td>Sobrenome</td>
+            <td>Email</td>
+            <td>telefone</td>
+        </thead>
+        <tbody>
+            <tr class='table-primary'>
+                <th>1</th>
+                <td class='table-active'>Fulano</td>
+                <td>Freitas Ribeiro</td>
+                <td>fulanofreitas@hotmail.com</td>
+                <td>7070-7070</td>
+            </tr>
+            <tr class='table-success'>
+                <th>2</th>
+                <td>Ciclano</td>
+                <td>Silva</td>
+                <td>ciclanosilva@hotmail.com</td>
+                <td>9990-9909</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Fulano</td>
+                <td>Santos</td>
+                <td>fulanosantos.com</td>
+                <td>5555-5555</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>Gregório</td>
+                <td>Fornetti Azevedo</td>
+                <td>gregoriofornettia@hotmail.com</td>
+                <td>1251-2571</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>Foot</th>
+            <td>Foot</td>
+            <td>Foot</td>
+            <td>Foot</td>
+            <td>Foot</td>
+        </tfoot>
+    </table>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
